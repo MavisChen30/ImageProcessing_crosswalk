@@ -1,0 +1,36 @@
+{
+    /****
+    * DATASET PATHS
+    ****/
+    "image_dataset": "/Users/mavischen/Desktop/ImageProcessing/Image_d1218/datasets/crosswalk_2/img_Categories",
+    "image_annotations": "/Users/mavischen/Desktop/ImageProcessing/Image_d1218/datasets/crosswalk_2/label_mat_2",
+    "image_distractions": "/Users/mavischen/Desktop/ImageProcessing/Image_d1218/datasets/crosswalk_2/sceneclass13",
+    /****
+    * FEATURE EXTRACTION
+    ****/
+    "features_path":"crosswalk_features.hdf5",
+    "percent_gt_images": 0.5,
+    "offset": 5,
+    "use_flip": true,
+    "num_distraction_images": 500,
+    "num_distractions_per_image": 10,
+    /****
+    * HISTOGRAM OF ORIENTED GRADIENTS
+    DESCRIPTOR
+    ****/
+    "orientations": 9,
+    "pixels_per_cell": [4, 4],
+    "cells_per_block": [2, 2],
+    "normalize": true,
+    /****
+    * OBJECT DETECTOR
+    ****/
+    "window_step": 8,
+    "overlap_thresh": 0.3,
+    "pyramid_scale": 1.5,
+    "window_dim": [96, 32],
+    "min_probability": 0.7,
+
+    "classifier_path": "crosswalk_model.cpicle",
+    "C": 0.01
+}
